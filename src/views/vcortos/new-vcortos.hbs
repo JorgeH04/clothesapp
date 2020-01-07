@@ -1,0 +1,69 @@
+<div class="card">
+
+  <div class="card-header bg-dark">
+    <h3 class="card-title text-white">
+      <i class="far fa-image"></i> Upload an Image
+    </h3>
+  </div>
+
+  <div class="card-body">
+    <form action="/images" method="POST" enctype="multipart/form-data">
+      
+      <div class="form-group">
+        <div class="input-group">
+          <div class="custom-file">
+            <input type="file" name="image" class="custom-file-input" id="inputGroupFile" aria-describedby="inputGroupFileAddon" required/>
+            <label class="custom-file-label" for="inputGroupFile">Main clothe</label>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="form-group">
+          <input type="text" name="product" class="form-control" placeholder="product" autofocus/>
+        </div>
+        <div class="form-group">
+          <input type="number" name="price" class="form-control" placeholder="price" autofocus/>
+        </div>
+      
+      <div class="form-group">
+        <button class="btn btn-success">
+          <i class="fa fa-upload"></i> Upload a product
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+          <section class="products">
+              <div class="section-title">
+                 <h2>our products</h2>
+              </div>
+    
+          <div class="products-center">
+          <!-- single product -->
+      {{#each clothes}}
+          <article class="product">
+       <div class="col-md-4 text-center">
+        <a href="/images/{{ filename  }}">
+          <img src="/public/upload/{{filename}}" alt="{{title}}" class="w-100 h-100 img-thumbnail">
+        </a>
+      </div>
+          <h3>{{ product }}</h3>
+          <h4>${{ price }}</h4>
+          <a href="/images/{{_id}}" class="btn btn-success pull-right" role="button">Delete</a>
+          <a href="/addtocard/{{_id}}" class="btn btn-success pull-right" role="button">Add</a>
+        </article>
+         {{/each}}
+        <!-- end of single product -->
+        
+        </div>
+        </section>
+          </div>
+        </div>
+      </div>

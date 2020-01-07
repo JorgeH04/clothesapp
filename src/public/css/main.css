@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  
+}
+
+.fas{
+    width: 100%;
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Lato", sans-serif;
+}
+/* --------------- Navbar ---------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgb(231, 226, 221);
+  z-index: 1;
+}
+
+.navbardos{
+    color: #222;
+}
+
+
+/* menu al costado */
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Josefin Sans' , sans-serif;
+
+}
+
+sectioon{
+    display:flex;
+    position:relative;
+    z-index:4;
+}
+
+/* Section 1 */
+
+.section1{
+    width:20vw;
+    margin-right:-18%;
+    margin-left:-15%;
+    margin-bottom: 90px;
+
+}
+
+
+
+
+
+
+.cgr{
+    margin-left:3%;
+}
+
+.submenu{
+    display:block;
+    padding:4% 4%;
+    border-bottom:1px solid #a7a7ad;
+    padding-left:4%;
+}
+
+
+.submenu:hover{
+    cursor:pointer;
+    background-color:#ffffff;
+}
+
+
+.card{
+    margin-bottom: 90px;
+
+}

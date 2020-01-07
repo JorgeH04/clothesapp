@@ -1,0 +1,91 @@
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="max-height: 600px;">
+      <img class="d-block w-100" src="public/img/portada1.jpg" alt="First slide">
+       <div class="carousel-caption d-none d-md-block">
+
+  </div>
+    </div>
+    <div class="carousel-item"  style="max-height: 600px;">
+      <img class="d-block w-100" src="public/img/portada2.jpg" alt="Second slide">
+       <div class="carousel-caption d-none d-md-block">
+  </div>
+    </div>
+    <div class="carousel-item"  style="max-height: 600px;">
+      <img class="d-block w-100" src="public/img/portada3.jpg" alt="Third slide">
+       <div class="carousel-caption d-none d-md-block">
+  </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div class="card mt-4">
+  <div class="card-header bg-dark text-white">
+    <h3> Recent Styles</h3>
+  </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+   <div class="container-fluid">
+   	<h1 class="text-center mt-5 mb-5">
+   		Bootstrap 4 peoduct slider
+   	</h1>
+
+   	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                  {{#each clothes}}
+
+   		<div class="carousel-inner row w-100 mx-auto">
+   			<div class="carousel-item col-md-3 active">
+   				<div class="card">
+   					<img class="card-img-top img-fluid" src="/public/upload/{{filename}}" alt="card-img">
+   					<div class="card-body">
+   						<h4 class="card-title">{{ product }}</h4>
+   						<p class="card-text">${{ price }}</p>
+   						<a class="btn btn-lg btn-info text-light text-capitalize">add to cart</a>
+   					</div>
+   				</div>
+   			</div>
+
+   			
+   			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+			  </a>
+  			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+			  </a>
+		 {{/each}}
+   		</div> 
+          	
+
+   	</div>
+   </div>
+		
+   			     

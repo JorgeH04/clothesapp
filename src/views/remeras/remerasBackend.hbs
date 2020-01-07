@@ -1,0 +1,18 @@
+<div class="card mt-2">
+  <div class="card-header bg-dark text-white">
+</div>
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h2>{{ babyimgs.product }}</h2>
+    <h2>{{ babyimgs.price }}</h2>
+  </div>
+
+  <div class="card-body">
+    
+    <div class="text-center">
+      <img src="/public/upload/{{babyimgs.filename}}" class="img-fluid">
+      </div>
+    <a href="/addtocard/{{babyimgs._id}}" class="btn btn-success pull-right" role="button">Add</a>
+  </div>
+</div>
+

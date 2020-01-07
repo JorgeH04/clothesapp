@@ -1,0 +1,44 @@
+<div class="container p-4">
+ <div class="row">
+   <div class= "col-md-4 mt-5">
+        <!-- This is Section 1 of the page -->
+        <div class="section1 mt-4">
+                <div class="navigation mt-4">
+                    <a class="cgr mt-4" >Categories</a>
+                </div>
+                <div class="mt-4">
+                    <a class="submenu" href="/vcortosindex">Vestidos Cortos</a>
+                    <a class="submenu" href="/vlargosindex">Vestidos Largos</a>
+                    <a class="submenu" href="/remerasindex">Remeras</a>
+                    <a class="submenu">Camisas y Blusas</a>
+                    <a class="submenu">Pantalones y Polleras</a>
+                    <a class="submenu">Sacos y Kimonos</a>
+                    <a class="submenu" href="/babyindex">Kids</a>
+                    <a class="submenu">Accesorios</a>
+                    <a class="submenu">Outlet</a>
+                </div>
+            </div>
+        </div>
+              {{#each vlargosclothes}}
+        <div class="col-md-3 active mt-4">
+            <div class="card">
+                <a href="/vlargosRedirect/{{ filename  }}">
+                  <img src="/public/upload/{{filename}}" alt="{{title}}" class="w-100 h-100 img-thumbnail">
+                </a>
+                <div class="card-body">
+                  <h3>{{ product }}</h3>
+                  <h4>${{ price }}</h4>
+                    <a href="/addtocard/{{_id}}" class="btn btn-lg btn-info text-light text-capitalize">add to cart</a>
+                </div>
+            </div>
+        </div>
+                 {{/each}}
+
+        
+        
+        </section>
+
+    </div>
+</div>
+</div>
+

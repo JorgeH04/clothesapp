@@ -1,0 +1,67 @@
+
+    <nav class="navbar navbar-expand-lg bg-dark px-4">
+      <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+            {{#if user}}
+            <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/users/profile">Profile</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/users/logout">Logout</a>
+          </li>
+          
+        {{else}}
+          <li class="nav-item active">
+            <a class="nav-link" href="/">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/users/signin">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users/signup">Register</a>
+          </li>
+            {{/if}}
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0">+ 123 456 789</p>
+          </div>
+          <!-- end of single info -->
+          <!-- single info -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3"></span>
+            <p class="mb-0 text-capitalize"><a href="/shopcart/"><i class="fas fa-cart-arrow-down"></i></a><span id="item-count">{{session.cart.totalQty}} </span> items - <span class="item-total"></span></p>
+          </div>
+          <!-- end of single info -->
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <div class="container"><a class="navbar-brand" href="/vcortosindex">COMPRAR</a>
+  <div class="container"><a class="navbar-brand" href="#">Cómo comprar</a>
+ 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Venta mayorista</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+    </ul>
+  </div>
+		</div>
+</nav>
+    
+
+
